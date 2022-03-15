@@ -1,3 +1,8 @@
 .borederdScoreBox {
     border: 1px solid black;
+    float: left;
+}
+
+.scorebox {
+    float: left
 }

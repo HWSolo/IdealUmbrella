@@ -33,4 +33,10 @@ test("it creates multiple boxes", () => {
     expect(component[1]).toHaveTextContent("5");
 })
 
-// test("it creates a button")
+test("it creates multiple boxes", () => {
+    render(<ScoreBox value="7" />)
+    render(<ScoreBox value="5" />)
+    const component = screen.queryAllByTestId("scorebox");
+    expect(component[0]).toHaveTextContent("7");
+    expect(component[1]).toHaveTextContent("5");
+})

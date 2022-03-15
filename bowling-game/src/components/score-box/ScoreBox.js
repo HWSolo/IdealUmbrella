@@ -4,7 +4,7 @@ import './ScoreBox.css';
 
 class ScoreBox extends React.Component {
     render = () => {
-        const cssClass = this.props.withBorder == "true" ? "borederdScoreBox" : "";
+        const cssClass = this.props.withBorder == "true" ? "borederdScoreBox" : "scorebox";
         return (<div data-testid="scorebox" className={cssClass}>{ this.props.value }</div>)
     }
 }
